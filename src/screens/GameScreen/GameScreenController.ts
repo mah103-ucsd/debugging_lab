@@ -84,7 +84,8 @@ export class GameScreenController extends ScreenController {
 	 * End the game
 	 */
 	private endGame(): void {
-		this.stopTimer;
+		//typo, did not do the stopTimer function call
+		this.stopTimer();
 
 		// Switch to results screen with final score
 		this.screenSwitcher.switchToScreen({
