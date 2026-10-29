@@ -3,7 +3,7 @@
  */
 export type LeaderboardEntry = {
 	score: number;
-	time: string; // formatted time
+	timestamp: string; // formatted time
 };
 
 /**
