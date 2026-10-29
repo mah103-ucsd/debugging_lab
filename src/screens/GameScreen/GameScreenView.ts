@@ -81,9 +81,9 @@ export class GameScreenView implements View {
 		const minY = padding;
 		const maxY = STAGE_HEIGHT - padding;
 
-		// Generate random position
-		const randomX = Math.round(Math.random()) * (maxX - minX) + minX;
-		const randomY = Math.round(Math.random()) * (maxY - minY) + minY;
+		// Generate random position, previously rounded Math.random() setting the value to either 0, 1 leading it to go to corners
+		const randomX = Math.random() * (maxX - minX) + minX;
+		const randomY = Math.random() * (maxY - minY) + minY;
 
 		// Update lemon position
 		this.lemonImage.x(randomX);
